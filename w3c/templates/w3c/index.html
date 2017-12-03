@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W3C</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'w3c/css/style.css' %}" />
+</head>
+<body>
+
+<div id="header">
+<h1>City Gallery</h1>
+</div>
+
+<div id="nav">
+    {% for city in latest_cities_list %}
+    <li><a id="a_title" href="{% url 'w3c:detail' city.id %}">{{ city.city_name_text }}</a></li>
+    {% endfor %}
+</div>
+
+
+<div id="footer">
+Copyright W3School.com.cn
+</div>
+
+</body>
+</html>

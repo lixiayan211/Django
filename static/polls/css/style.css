@@ -1,0 +1,53 @@
+#ul_title
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+#li_home,
+#li_news,
+#li_contact,
+#li_about
+{
+    float:left;
+}
+
+#a_home:link,#a_home:visited,
+#a_news:link,#a_news:visited,
+#a_contact:link,#a_contact:visited,
+#a_about:link,#a_about:visited
+{
+    display:block;
+    width:120px;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#bebebe;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+#a_home:hover,#a_home:active,
+#a_news:hover,#a_news:active,
+#a_contact:hover,#a_contact:active,
+#a_about:hover,#a_about:active
+{
+    background-color:#cc0000;
+}
+
+#a_context
+{
+    font:italic bold 25px/20px arial,sans-serif;
+    text-decoration:underline;
+}
+
+body {
+    background-color: white;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment:fixed;
+}

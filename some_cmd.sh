@@ -1,5 +1,5 @@
 
-sudo ln -s ~/path/to/your/mysite/mysite_nginx.conf /etc/nginx/sites-enabled/
+sudo ln -s ~/home/leo/www/mysite/mysite_nginx.conf /etc/nginx/sites-enabled/
 
 
 
@@ -7,7 +7,7 @@ sudo ln -s ~/path/to/your/mysite/mysite_nginx.conf /etc/nginx/sites-enabled/
 sudo mkdir /etc/uwsgi
 sudo mkdir /etc/uwsgi/vassals
 # symlink from the default config directory to your config file
-sudo ln -s /path/to/your/mysite/mysite_uwsgi.ini /etc/uwsgi/vassals/
+sudo ln -s /home/leo/www/mysite/mysite_uwsgi.ini /etc/uwsgi/vassals/
 
 
 

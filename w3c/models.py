@@ -8,8 +8,9 @@ from django.utils import timezone
 # Create your models here.
 
 
-class Question(models.Model):
-    question_text = models.CharField(max_length=200)
+class CityGallery(models.Model):
+    city_name_text = models.CharField(max_length=20)
+    city_introduce_text = models.CharField(max_length=2000)
     pub_date = models.DateTimeField('date published')
 
     def was_published_recently(self):
@@ -18,8 +19,3 @@ class Question(models.Model):
     was_published_recently.admin_order_field = 'pub_date'
     was_published_recently.boolean = True
     was_published_recently.short_description = 'Published recently?'
-
-class Choice(models.Model):
-    question = models.ForeignKey(Question)
-    choice_text = models.CharField(max_length=200)
-    votes = models.IntegerField(default=0)
